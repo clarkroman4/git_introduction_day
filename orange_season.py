@@ -1,4 +1,5 @@
 from orange_tree import *
+from oranges import *
 
 # Overall instructions, in this script. Model the life of a tree.
 # 1. Pass growing seasons until a tree is mature.
@@ -19,7 +20,11 @@ def main():
     print(tree)
 
 
-  print("Tree matured")
+  if tree.has_oranges:
+    orange = tree.harvest_orange()
+    # print(orange.diameter)
+
+  print("tree matured")
 
 
 
